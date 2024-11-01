@@ -1,0 +1,38 @@
+li {
+    cursor: pointer;
+}
+
+option {
+    background-color: #d01251;;
+    color: white;
+}
+
+/* this css code is written in tailwind css */
+
+/* @media (max-width: 900px) {
+    .navbar {
+        padding: 20px 8%;
+    }
+
+    .navbar button {
+        gap: 8px;
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+    .navbar img {
+        width: 12vw;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    .navbar button img {
+        width: 12px;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+} */

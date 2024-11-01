@@ -1,0 +1,44 @@
+.myTableClass div:last-child {
+    border-bottom: none;
+}
+
+/* General (Desktop & Tablet) */
+.myTableClassWrapper {
+    max-width: 800px; /* Constrain the width to the desired maximum */
+    margin: auto; /* Center the table */
+}
+
+.myTableClass {
+    width: 100%; /* Let the table take full width of its container */
+    border: 2px solid black;
+}
+
+/* Tablet screens and below */
+@media (max-width: 780px) {
+    *{
+        font-size: 14px;
+    }
+    .myTableClass {
+        grid-template-columns: repeat(5, 1fr); /* Ensure columns are equally spaced */
+        /* font-size: 13px; */
+    }
+
+    .market-cap {
+        display: block; /* Make sure Market Cap column is visible */
+        
+    }
+}
+
+
+/* Mobile screens */
+@media (max-width: 600px) {
+    .myTableClassWrapper {
+        overflow-x: auto;
+        max-width: 100%; /* Allow the container to expand fully for horizontal scrolling */
+    }
+
+    .myTableClass {
+        grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+        min-width: 800px; /* Maintain the minimum width for all columns to be visible */
+    }
+}
