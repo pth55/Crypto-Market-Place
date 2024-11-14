@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/Navbar/NavBar";
 import Home from "./pages/Home/Home";
 import Coin from "./pages/Coin/Coin";
-import Test2 from "./components/Test2.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/coin/:coinId" element={<Coin />} />
-        <Route path="/test/" element={<Test2 />} />
       </Routes>
       <Footer/>
     </div>
